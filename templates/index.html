@@ -1,14 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de alunos</title>
+    <link rel="stylesheet" href="{{ request.url_for('static', path='style.css') }}">
 </head>
+
 <body>
-    
+
     <div class="container">
         <h1>Lista de alunos</h1>
+        <a href="/cadastro" class="botao">➕ Novo aluno</a>
+        <table>
+            <thead>
+                <th>Nome</th>
+                <th>Nota</th>
+                <th>Status</th>
+            </thead>
+            <tbody>
+                {% for aluno in listar_alunos %}
+                <tr class="{% if aluno.nota >= 7 %}aprovado{% else %}reprovado{% endif %}">
+                    <td>{{ aluno.nome }}</td>
+                    <td>{{ aluno.nota }}</td>
+                    <td>
+                        {% if aluno.nota >= 7 %}
+                            aprovado
+                        {% else %}
+                            reprovado
+                        {% endif %}
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
     </div>
+
 </body>
+
 </html>

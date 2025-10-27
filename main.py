@@ -12,13 +12,12 @@ templates = Jinja2Templates(directory="templates")
 #Definir a pasta onde está os arquivos estaticos (CSS, Imagens, e JS)
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
-alunos = {
-
+alunos = [
     {"nome": "Murilo", "nota": 9.5},
     {"nome": "Joanna", "nota": 5.5},
     {"nome": "Cassio", "nota": 10.0}
 
-}
+]
 
 #Rota principal 
 @app.get("/", response_class=HTMLResponse)

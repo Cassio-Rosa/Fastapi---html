@@ -1,0 +1,96 @@
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 70%;
+    margin: 40px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 30px;
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+/* Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    text-align: center;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #3498db;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Classes condicionais */
+.aprovado {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.reprovado {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* Hover */
+tr:hover {
+    background-color: #e8f4fd;
+    transition: 0.3s;
+}
+
+
+.botao {
+    background: #3498db;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background-color: #0996f4;
+}
+
+.voltar {
+    display: block;
+    margin-top: 20px;
+    color: #3498db;
+    text-decoration: none;
+}
+
+form {
+    display: inline-block;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px #ccc;
+    margin-top: 20px;
+}
+
+input {
+    display: block;
+    margin: 10px auto;
+    padding: 8px;
+    width: 250px;
+}
