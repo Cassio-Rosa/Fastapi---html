@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastrar Aluno</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1> Cadastrar Novo Aluno</h1>
+
+    <form action="/cadastro" method="post">
+        <label>Nome do Aluno:</label>
+        <input type="text" name="nome" required>
+
+        <label>Nota:</label>
+        <input type="number" name="nota" required>
+
+        <button type="submit" class="botao">Salvar</button>
+    </form>
+
+    <a href="/" class="voltar">⬅ Voltar</a>
+</body>
+</html>
